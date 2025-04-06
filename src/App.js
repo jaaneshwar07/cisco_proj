@@ -2,6 +2,7 @@
 import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
+import PublicIP from './PublicIP';
 
 function App() {
   return (
@@ -9,9 +10,16 @@ function App() {
       <Banner title="OM" />
       <header className="App-header">
         
-      <Exhibit heading="First Exhibit">
-          <p>This is the first child element inside the exhibit.</p>
+      
+
+        <Exhibit heading="Your IPv4 Address">
+          <PublicIP version="v4" />
         </Exhibit>
+
+        <Exhibit heading="Your IPv6 Address">
+          <PublicIP version="v6" />
+        </Exhibit>
+
 
         <Exhibit heading="Second Exhibit">
           <button>Click Me</button>
